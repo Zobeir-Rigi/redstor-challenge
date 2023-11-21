@@ -16,7 +16,7 @@ const pool = new Pool({
       return pool.query(text, params, callback);
     },
   };
-  const port = process.env.PORT || 8880;
+  const port = process.env.PORT || 8800;
 
 app.get("/", (req, res)=>{
     res.json("hello this is the backend")
