@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { Link } from 'react-router-dom';
 
 export const Items = () => {
     const [items, setItems] = useState([])
@@ -28,6 +29,7 @@ export const Items = () => {
                         <span>{item.price}</span>
                         {item.specialPrice && <span>{item.specialPrice}</span>}
                         <p>{item.about}</p>
+                        <button><Link to="" >Add to the basket</Link></button>
                     </div>
                 ))}
             </div>
