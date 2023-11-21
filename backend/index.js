@@ -1,5 +1,7 @@
 const express = require("express");
 const { Pool } = require("pg");
+const cors = require("cors"); 
+
 require("dotenv").config();
 
 const app = express();
@@ -17,6 +19,7 @@ const pool = new Pool({
     },
   };
   const port = process.env.PORT || 8800;
+app.use(cors())
 
 app.get("/", (req, res)=>{
     res.json("hello this is the backend")
