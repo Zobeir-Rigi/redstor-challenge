@@ -24,11 +24,22 @@ export const Items = () => {
                 {items.map(item =>(
                     <div className="item" key={item.id}>
                         <img src={item.pic} alt=""/>
-                        <h2>{item.name}</h2>
-                        <span>{item.barcode}</span>
-                        <span>{item.price}</span>
-                        {item.specialPrice && <span>{item.specialPrice}</span>}
-                        <p>{item.about}</p>
+                        <div className="name-barcode">
+                            <span>{item.name}</span>
+                            <span className="barcode">({item.barcode})</span>
+                        </div>
+                        <div className="price">
+                            <span>{item.price}</span>
+                            {item.specialPrice && (
+                                item.barcode === "a" ? (
+                                    <span>Buy 3 for {item.specialPrice}</span>
+                                ) : item.barcode === "b" ? (
+                                    <span>Buy 2 for {item.specialPrice}</span>
+                                ) : (
+                                    <span>No special offer</span>
+                                )
+                            )}
+                        </div>                      <p>{item.about}</p>
                         <button><Link to="" >Add to the basket</Link></button>
                     </div>
                 ))}

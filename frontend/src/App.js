@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css"
+import "./style.css"
 import {BrowserRouter, Routes, Route,} from "react-router-dom"
 import { Items } from "./pages/Items";
 import { Checkout } from "./pages/Checkout";
