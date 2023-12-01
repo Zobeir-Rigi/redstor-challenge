@@ -1,5 +1,5 @@
 
-class Checkout {
+class Checkoutt {
     constructor(pricingRules) {
       this.pricingRules = pricingRules;
       this.basket = [];
@@ -56,4 +56,4 @@ class Checkout {
     }
   }
   
-  module.exports = Checkout;
+  module.exports = Checkoutt;
