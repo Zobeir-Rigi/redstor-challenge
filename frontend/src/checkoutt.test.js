@@ -19,7 +19,7 @@ const pricingRules = {
   B: { unitPrice: 30, specialPriceString: "2 for 45" },
   C: { unitPrice: 30 },
   D: { unitPrice: 25 },
-  E: {}
+  E: {unitPrice:20},
 };
 
 test("A", () => {
