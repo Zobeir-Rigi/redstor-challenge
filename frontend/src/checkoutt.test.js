@@ -21,6 +21,8 @@ const pricingRules = {
   D: { unitPrice: 25 },
   E: {unitPrice:20},
   F: {unitPrice:20, specialPriceString: "3 for 50"},
+  G: {unitPrice:35, specialPriceString: "2 for 60"},
+
 
 };
 
