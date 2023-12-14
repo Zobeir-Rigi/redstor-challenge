@@ -25,6 +25,8 @@ const pricingRules = {
   H: {unitPrice:40, specialPriceString: "2 for 70"},
   I: {unitPrice:45, specialPriceString: "2 for 80"},
   J: {unitPrice:45, specialPriceString: "2 for 80"},
+  K: {unitPrice:15, specialPriceString: "3 for 40"},
+
 
 };
 
